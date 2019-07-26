@@ -54,7 +54,7 @@ if (process.platform === 'win32') {
 } else if (process.platform === 'linux') {
   switch (process.arch) {
     case 'x64':
-      get('https://www.dropbox.com/s/eer4w48qnozuy7m/ffmpeg-modplug-4.1.4-amd64-static.tar.xz?dl=1', callback);
+      get('https://www.dropbox.com/s/778vwgt0ylc7469/ffmpeg-release-amd64-static.tar.xz?dl=1', callback);
       break;
     case 'ia32':
       get('https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-i686-static.tar.xz', callback);
