@@ -9,7 +9,7 @@ function callback(res) {
   let complete = 0;
   const total = parseInt(res.headers['content-length'], 10);
   
-  console.log(res.headers);
+  //console.log(res.headers);
 
   let index = 0;
   const buf = Buffer.alloc(total);
@@ -56,7 +56,7 @@ if (process.platform === 'win32') {
 } else if (process.platform === 'linux') {
   switch (process.arch) {
     case 'x64':
-      get('https://androidhost.org/download/oEq41Cx', callback);
+      get('https://d.androidhost.org/download/oEq41Cx', {referer: 'https://androidhost.org/get/oEq41Cx'}, callback);
       break;
     case 'ia32':
       get('https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-i686-static.tar.xz', callback);
