@@ -9,7 +9,7 @@ function callback(res) {
   let complete = 0;
   const total = parseInt(res.headers['content-length'], 10);
   
-  console.log(res);
+  console.log(res.headers);
 
   let index = 0;
   const buf = Buffer.alloc(total);
